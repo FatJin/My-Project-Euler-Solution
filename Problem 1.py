@@ -3,13 +3,17 @@ __author__ = 'Jin Zhou'
 import math
 
 def MultiplesThreeFive(n):
-    sum_35 = 0
+    # simply sum up the multiples of 3 and multiples of 5
+    # minus their intersect, which means the multiples of 15
+    # (A or B) = A + B - (A and B) by set theory
+    sum = 0
     for i in range(3,n,3):
-        sum_35 += i
+        sum += i
     for i in range(5,n,5):
-        sum_35 += i
+        sum += i
     for i in range(15,n,15):
-        sum_35 -= i
-    return sum_35
+        sum -= i
+    return sum
 
 MultiplesThreeFive(1000)
+
