@@ -1,4 +1,4 @@
-__author__ = 'januschou'
+__author__ = 'Jin Zhou'
 
 import math
 
